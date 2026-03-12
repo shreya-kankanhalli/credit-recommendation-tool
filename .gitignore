@@ -1,0 +1,10 @@
+# Training data — contains PII, never commit
+training_data.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# macOS
+.DS_Store
