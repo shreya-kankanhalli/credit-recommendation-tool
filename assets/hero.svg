@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280">
+  <defs>
+    <clipPath id="cl"><rect x="0" y="0" width="394" height="280"/></clipPath>
+    <clipPath id="cr"><rect x="406" y="0" width="394" height="280"/></clipPath>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════
+       LEFT SHOP — WOMAN
+       ═══════════════════════════════════════════ -->
+  <g clip-path="url(#cl)">
+
+    <!-- Wall & ceiling -->
+    <rect x="0"   y="0"  width="394" height="280" fill="#C89850"/>
+    <rect x="0"   y="0"  width="394" height="20"  fill="#8A6428"/>
+
+    <!-- Shelf vertical uprights -->
+    <rect x="12"  y="20" width="6"   height="170" fill="#286028"/>
+    <rect x="134" y="20" width="5"   height="170" fill="#286028"/>
+    <rect x="256" y="20" width="5"   height="170" fill="#286028"/>
+    <rect x="376" y="20" width="6"   height="170" fill="#286028"/>
+
+    <!-- Shelf horizontal bars (pairs = shelf surface) -->
+    <rect x="12" y="20"  width="370" height="7"  fill="#286028"/>
+    <rect x="12" y="74"  width="370" height="5"  fill="#286028"/>
+    <rect x="12" y="79"  width="370" height="5"  fill="#286028"/>
+    <rect x="12" y="130" width="370" height="5"  fill="#286028"/>
+    <rect x="12" y="135" width="370" height="5"  fill="#286028"/>
+    <rect x="12" y="182" width="370" height="6"  fill="#286028"/>
+
+    <!-- Shelf backing shadow panels -->
+    <rect x="18"  y="27" width="114" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="139" y="27" width="115" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="261" y="27" width="113" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="18"  y="84" width="114" height="46" fill="#1C3A18" opacity="0.10"/>
+    <rect x="139" y="84" width="115" height="46" fill="#1C3A18" opacity="0.10"/>
+    <rect x="261" y="84" width="113" height="46" fill="#1C3A18" opacity="0.10"/>
+
+    <!-- SHELF 1 (y 27–74): pale sacks & flour bags -->
+    <rect x="19"  y="28" width="32" height="44" rx="3" fill="#E2DAC0"/>
+    <rect x="54"  y="28" width="32" height="44" rx="3" fill="#D8D0B8"/>
+    <rect x="89"  y="30" width="42" height="42" rx="2" fill="#E6DECC"/>
+    <rect x="139" y="28" width="34" height="44" rx="3" fill="#ECE4CC"/>
+    <rect x="176" y="28" width="34" height="44" rx="3" fill="#DEDAD8"/>
+    <rect x="213" y="30" width="40" height="42" rx="2" fill="#E4DCCA"/>
+    <rect x="261" y="28" width="33" height="44" rx="3" fill="#D8D2B8"/>
+    <rect x="297" y="28" width="33" height="44" rx="3" fill="#E6DEC8"/>
+    <rect x="333" y="30" width="41" height="42" rx="2" fill="#E0D8C0"/>
+
+    <!-- SHELF 2 (y 84–130): colourful packages -->
+    <rect x="19"  y="85" width="37" height="43" rx="3" fill="#E8C038"/>
+    <rect x="59"  y="85" width="37" height="43" rx="3" fill="#F0CC48"/>
+    <rect x="99"  y="87" width="32" height="41" rx="2" fill="#E4B830"/>
+    <rect x="139" y="85" width="37" height="43" rx="3" fill="#3A80CC"/>
+    <rect x="179" y="85" width="37" height="43" rx="3" fill="#2870BC"/>
+    <rect x="219" y="87" width="34" height="41" rx="2" fill="#4890D8"/>
+    <rect x="261" y="85" width="37" height="43" rx="3" fill="#58A840"/>
+    <rect x="301" y="85" width="37" height="43" rx="3" fill="#489838"/>
+    <rect x="341" y="87" width="33" height="41" rx="2" fill="#60B048"/>
+
+    <!-- SHELF 3 (y 141–182): large sacks -->
+    <rect x="19"  y="141" width="60" height="39" rx="3" fill="#CAA870"/>
+    <rect x="82"  y="141" width="49" height="39" rx="3" fill="#BA9860"/>
+    <rect x="139" y="141" width="55" height="39" rx="3" fill="#C2A268"/>
+    <rect x="197" y="143" width="56" height="37" rx="2" fill="#BCAA68"/>
+    <rect x="261" y="141" width="55" height="39" rx="3" fill="#CAA870"/>
+    <rect x="319" y="141" width="55" height="39" rx="3" fill="#BAA068"/>
+
+    <!-- WOMAN FIGURE — head + torso (drawn BEFORE counter) -->
+
+    <!-- Green shop coat body -->
+    <path d="M170 202 L174 162 Q198 152 222 162 L226 202 Z"       fill="#228830"/>
+    <path d="M165 198 L172 180 L224 180 L231 198 Z"               fill="#228830"/>
+    <!-- Shirt/collar at neckline -->
+    <path d="M191 162 L198 175 L205 162 L200 159 Z"               fill="#EDE0BC" opacity="0.85"/>
+
+    <!-- Neck -->
+    <rect x="192" y="149" width="12" height="16" rx="4"           fill="#7A3C0E"/>
+
+    <!-- Head -->
+    <ellipse cx="198" cy="134" rx="22" ry="24"                    fill="#7A3C0E"/>
+
+    <!-- Natural hair (compact close-cropped style) -->
+    <ellipse cx="198" cy="116" rx="23" ry="14"                    fill="#130600"/>
+    <ellipse cx="180" cy="124" rx="8"  ry="12"                    fill="#130600"/>
+    <ellipse cx="216" cy="124" rx="8"  ry="12"                    fill="#130600"/>
+    <ellipse cx="198" cy="112" rx="16" ry="9"                     fill="#1C0C00"/>
+
+    <!-- Eyes -->
+    <ellipse cx="191" cy="133" rx="3.2" ry="3.9"                  fill="#0A0200"/>
+    <ellipse cx="205" cy="133" rx="3.2" ry="3.9"                  fill="#0A0200"/>
+    <circle  cx="192.4" cy="131.4" r="1.1"                        fill="white" opacity="0.50"/>
+    <circle  cx="206.4" cy="131.4" r="1.1"                        fill="white" opacity="0.50"/>
+
+    <!-- Nose -->
+    <ellipse cx="198" cy="141" rx="2.8" ry="1.7"                  fill="#632A08" opacity="0.38"/>
+
+    <!-- Warm smile -->
+    <path d="M188 148 Q198 157 208 148"                           stroke="#2A0A00" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M189.5 148.5 Q198 155 206.5 148.5"                   fill="white" opacity="0.62"/>
+
+    <!-- Counter (occludes lower body) -->
+    <rect x="0"   y="202" width="394" height="78" fill="#5A2E10"/>
+    <rect x="0"   y="202" width="394" height="15" fill="#7A4820"/>
+    <rect x="0"   y="202" width="394" height="3"  fill="#9A5828" opacity="0.45"/>
+
+    <!-- Arms + hands ON counter (drawn AFTER counter) -->
+    <!-- Left sleeve -->
+    <path d="M174 182 L160 200 L160 210"                          stroke="#228830" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <!-- Left forearm / hand -->
+    <path d="M160 204 L160 216"                                   stroke="#7A3C0E" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <ellipse cx="160" cy="216" rx="12" ry="7"                     fill="#7A3C0E"/>
+
+    <!-- Right sleeve -->
+    <path d="M224 182 L238 200 L238 210"                          stroke="#228830" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <!-- Right forearm / hand -->
+    <path d="M238 204 L238 216"                                   stroke="#7A3C0E" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <ellipse cx="238" cy="216" rx="12" ry="7"                     fill="#7A3C0E"/>
+
+  </g>
+
+  <!-- ═══════════════════════════════════════════
+       RIGHT SHOP — MAN
+       ═══════════════════════════════════════════ -->
+  <g clip-path="url(#cr)">
+
+    <!-- Wall & ceiling -->
+    <rect x="406" y="0"  width="394" height="280" fill="#BC9040"/>
+    <rect x="406" y="0"  width="394" height="20"  fill="#846020"/>
+
+    <!-- Shelf vertical uprights -->
+    <rect x="418" y="20" width="6"   height="170" fill="#286028"/>
+    <rect x="540" y="20" width="5"   height="170" fill="#286028"/>
+    <rect x="662" y="20" width="5"   height="170" fill="#286028"/>
+    <rect x="782" y="20" width="6"   height="170" fill="#286028"/>
+
+    <!-- Shelf horizontal bars -->
+    <rect x="418" y="20"  width="370" height="7"  fill="#286028"/>
+    <rect x="418" y="74"  width="370" height="5"  fill="#286028"/>
+    <rect x="418" y="79"  width="370" height="5"  fill="#286028"/>
+    <rect x="418" y="130" width="370" height="5"  fill="#286028"/>
+    <rect x="418" y="135" width="370" height="5"  fill="#286028"/>
+    <rect x="418" y="182" width="370" height="6"  fill="#286028"/>
+
+    <!-- Shelf backing shadow panels -->
+    <rect x="424" y="27" width="114" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="545" y="27" width="115" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="667" y="27" width="113" height="47" fill="#1C3A18" opacity="0.13"/>
+    <rect x="424" y="84" width="114" height="46" fill="#1C3A18" opacity="0.10"/>
+    <rect x="545" y="84" width="115" height="46" fill="#1C3A18" opacity="0.10"/>
+    <rect x="667" y="84" width="113" height="46" fill="#1C3A18" opacity="0.10"/>
+
+    <!-- SHELF 1 (y 27–74): red juice bottles + green tea + yellow goods -->
+    <!-- Red juice bottles section 1 -->
+    <rect x="424" y="25" width="20" height="47" rx="5" fill="#CC1E1E"/>
+    <rect x="447" y="25" width="20" height="47" rx="5" fill="#E02E26"/>
+    <rect x="470" y="25" width="20" height="47" rx="5" fill="#CC1E1E"/>
+    <rect x="493" y="25" width="20" height="47" rx="5" fill="#D82626"/>
+    <rect x="516" y="27" width="20" height="45" rx="4" fill="#C41818"/>
+    <!-- Bottle cap highlights -->
+    <rect x="425" y="24" width="18" height="5"  rx="2" fill="#E84040"/>
+    <rect x="448" y="24" width="18" height="5"  rx="2" fill="#F04848"/>
+    <rect x="471" y="24" width="18" height="5"  rx="2" fill="#E04040"/>
+    <rect x="494" y="24" width="18" height="5"  rx="2" fill="#E83838"/>
+    <!-- Green tea / packets section 2 -->
+    <rect x="545" y="25" width="28" height="47" rx="3" fill="#388428"/>
+    <rect x="576" y="25" width="28" height="47" rx="3" fill="#2C7820"/>
+    <rect x="607" y="27" width="28" height="45" rx="2" fill="#388428"/>
+    <rect x="638" y="27" width="20" height="45" rx="2" fill="#307C20"/>
+    <!-- Yellow goods section 3 -->
+    <rect x="667" y="25" width="28" height="47" rx="3" fill="#DCC040"/>
+    <rect x="698" y="25" width="28" height="47" rx="3" fill="#ECD050"/>
+    <rect x="729" y="25" width="28" height="47" rx="3" fill="#D8B838"/>
+    <rect x="760" y="27" width="20" height="45" rx="2" fill="#E4C848"/>
+
+    <!-- SHELF 2 (y 84–130): blue packets + yellow boxes + green bags -->
+    <rect x="424" y="85" width="40" height="43" rx="3" fill="#2468C0"/>
+    <rect x="467" y="85" width="40" height="43" rx="3" fill="#1858B0"/>
+    <rect x="510" y="87" width="27" height="41" rx="2" fill="#3478CC"/>
+    <rect x="545" y="85" width="44" height="43" rx="3" fill="#E8C038"/>
+    <rect x="592" y="85" width="44" height="43" rx="3" fill="#D8B030"/>
+    <rect x="639" y="87" width="20" height="41" rx="2" fill="#ECC840"/>
+    <rect x="667" y="85" width="38" height="43" rx="3" fill="#78BC50"/>
+    <rect x="708" y="85" width="38" height="43" rx="3" fill="#68AC40"/>
+    <rect x="749" y="87" width="30" height="41" rx="2" fill="#80C458"/>
+
+    <!-- SHELF 3 (y 141–182): large sacks -->
+    <rect x="424" y="141" width="60" height="39" rx="3" fill="#CCAA78"/>
+    <rect x="487" y="141" width="50" height="39" rx="3" fill="#BCA068"/>
+    <rect x="545" y="141" width="52" height="39" rx="3" fill="#B89860"/>
+    <rect x="600" y="143" width="59" height="37" rx="2" fill="#C0A068"/>
+    <rect x="667" y="141" width="54" height="39" rx="3" fill="#CCAA78"/>
+    <rect x="724" y="141" width="56" height="39" rx="3" fill="#BCA068"/>
+
+    <!-- MAN FIGURE — head + torso (drawn BEFORE counter) -->
+
+    <!-- Navy shop coat -->
+    <path d="M572 202 L576 160 Q598 151 620 160 L624 202 Z"       fill="#1C3870"/>
+    <path d="M568 196 L574 180 L622 180 L628 196 Z"               fill="#1C3870"/>
+    <!-- Coat lapels -->
+    <path d="M592 160 L588 177 L598 170 Z"                        fill="#14306A"/>
+    <path d="M604 160 L608 177 L598 170 Z"                        fill="#14306A"/>
+    <!-- Shirt collar inside -->
+    <path d="M592 160 L598 172 L604 160 L600 158 Z"               fill="#ECD8B8" opacity="0.82"/>
+
+    <!-- Neck -->
+    <rect x="592" y="148" width="12" height="15" rx="4"           fill="#602808"/>
+
+    <!-- Head -->
+    <ellipse cx="598" cy="133" rx="22" ry="24"                    fill="#602808"/>
+
+    <!-- Short close-cropped hair -->
+    <rect x="577" y="111" width="42" height="23" rx="12"          fill="#0E0400"/>
+    <path d="M577 123 Q577 107 598 105 Q619 107 619 123 Q617 112 598 110 Q579 112 577 123 Z" fill="#0E0400"/>
+
+    <!-- Beard / stubble shadow -->
+    <path d="M580 146 Q598 156 616 146 Q612 153 598 156 Q584 153 580 146 Z" fill="#3A1200" opacity="0.38"/>
+
+    <!-- Eyes -->
+    <ellipse cx="591" cy="132" rx="3.2" ry="3.9"                  fill="#080200"/>
+    <ellipse cx="605" cy="132" rx="3.2" ry="3.9"                  fill="#080200"/>
+    <circle  cx="592.4" cy="130.4" r="1.1"                        fill="white" opacity="0.50"/>
+    <circle  cx="606.4" cy="130.4" r="1.1"                        fill="white" opacity="0.50"/>
+
+    <!-- Nose -->
+    <ellipse cx="598" cy="140" rx="2.8" ry="1.7"                  fill="#4E1800" opacity="0.38"/>
+
+    <!-- Big smile -->
+    <path d="M588 147 Q598 157 608 147"                           stroke="#200800" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M589.5 147.5 Q598 154 606.5 147.5"                   fill="white" opacity="0.68"/>
+
+    <!-- Laptop (drawn before counter so base is hidden by counter) -->
+    <rect x="648" y="191" width="52" height="34" rx="3"           fill="#282828"/>
+    <rect x="651" y="194" width="46" height="27" rx="2"           fill="#3A4C62"/>
+    <rect x="654" y="197" width="40" height="3"  rx="1"           fill="#5880A8" opacity="0.80"/>
+    <rect x="654" y="202" width="32" height="2"  rx="1"           fill="#5880A8" opacity="0.60"/>
+    <rect x="654" y="206" width="36" height="2"  rx="1"           fill="#5880A8" opacity="0.60"/>
+    <rect x="654" y="210" width="28" height="2"  rx="1"           fill="#5880A8" opacity="0.50"/>
+    <rect x="643" y="208" width="64" height="7"  rx="3"           fill="#383838"/>
+
+    <!-- Counter (occludes lower body) -->
+    <rect x="406" y="202" width="394" height="78" fill="#4A2808"/>
+    <rect x="406" y="202" width="394" height="15" fill="#6A3C18"/>
+    <rect x="406" y="202" width="394" height="3"  fill="#985828" opacity="0.45"/>
+
+    <!-- Arms + hands ON counter (drawn AFTER counter) -->
+    <!-- Left sleeve → hand near laptop -->
+    <path d="M572 182 L557 200 L557 213"                          stroke="#1C3870" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <path d="M557 207 L557 217"                                   stroke="#602808" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <ellipse cx="557" cy="217" rx="12" ry="6"                     fill="#602808"/>
+
+    <!-- Right sleeve → hand resting -->
+    <path d="M624 182 L638 198 L638 212"                          stroke="#1C3870" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M638 207 L638 215"                                   stroke="#602808" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <ellipse cx="638" cy="215" rx="11" ry="6"                     fill="#602808"/>
+
+  </g>
+
+</svg>

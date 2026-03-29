@@ -168,7 +168,7 @@ feat_cols = bundle["feature_cols"]
 T = {
     "en": {
         "tagline":      "Know what you qualify for",
-        "welcome_body": "Answer 6 quick questions about your business and get a personalised loan estimate — based on real data from entrepreneurs like you.",
+        "welcome_body": "Answer 6 quick questions about your business and get a personalized loan estimate — based on data from Kenyan entrepreneurs.",
         "start":        "Get started",
         "back":         "← Back",
         "next":         "Next →",
@@ -195,7 +195,7 @@ T = {
     },
     "sw": {
         "tagline":      "Jua unachostahili",
-        "welcome_body": "Jibu maswali 6 mafupi kuhusu biashara yako na upate makadirio ya mkopo — kulingana na data halisi kutoka kwa wajasiriamali kama wewe.",
+        "welcome_body": "Jibu maswali 6 mafupi kuhusu biashara yako na upate makadirio ya mkopo — kulingana na data kutoka kwa wajasiriamali wa Kenya.",
         "start":        "Anza",
         "back":         "← Rudi",
         "next":         "Endelea →",
@@ -224,24 +224,84 @@ T = {
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 TAXONOMY = {
-    "Retail":             {"en": "Retail",                  "sw": "Biashara ya Rejareja",       "subs": {"grocery_food": {"en":"Grocery & food","sw":"Vyakula na mahitaji"}, "clothing_fashion":{"en":"Clothing & fashion","sw":"Nguo na mitindo"}, "electronics":{"en":"Electronics & phones","sw":"Elektroniki na simu"}, "pharmacy":{"en":"Pharmacy / chemist","sw":"Duka la dawa"}, "hardware":{"en":"Hardware & building","sw":"Vifaa vya ujenzi"}, "wines_spirits":{"en":"Wines & spirits","sw":"Pombe na vinywaji"}, "cereals":{"en":"Cereals & grains","sw":"Nafaka na mazao"}, "farm_inputs":{"en":"Farm inputs / Agrovet","sw":"Pembejeo za kilimo"}, "auto_spares":{"en":"Auto & motorbike spares","sw":"Vipuri vya gari"}, "beauty_products":{"en":"Beauty products","sw":"Bidhaa za urembo"}, "books_stationery":{"en":"Books & stationery","sw":"Vitabu na stesheni"}, "retail_other":{"en":"Other retail","sw":"Rejareja nyingine"}}},
-    "Services":           {"en": "Services",                "sw": "Huduma",                     "subs": {"salon_beauty":{"en":"Salon & beauty","sw":"Saluni na urembo"}, "hotel_restaurant":{"en":"Hotel / restaurant","sw":"Hoteli na mgahawa"}, "cyber_ict":{"en":"Cyber / IT services","sw":"Cyber na teknolojia"}, "barbershop":{"en":"Barbershop","sw":"Kinyozi"}, "rental_property":{"en":"Rental property","sw":"Kupangisha nyumba"}, "taxi_transport":{"en":"Taxi & transport","sw":"Teksi na usafiri"}, "school_education":{"en":"School / education","sw":"Shule na elimu"}, "medical_health":{"en":"Medical / health","sw":"Afya na matibabu"}, "mpesa_agency":{"en":"Mobile money / Mpesa","sw":"Mpesa na huduma za pesa"}, "services_other":{"en":"Other services","sw":"Huduma nyingine"}}},
-    "Agriculture":        {"en": "Agriculture",             "sw": "Kilimo",                     "subs": {"crop_farming":{"en":"Crop farming","sw":"Kulima mazao"}, "livestock_poultry":{"en":"Livestock & poultry","sw":"Mifugo na kuku"}, "dairy":{"en":"Dairy","sw":"Maziwa"}, "fish":{"en":"Fish","sw":"Samaki"}, "farm_inputs_agro":{"en":"Farm inputs / Agrovet","sw":"Pembejeo za kilimo"}, "agri_other":{"en":"Other agriculture","sw":"Kilimo kingine"}}},
-    "Wholesale":          {"en": "Wholesale",               "sw": "Biashara ya Jumla",           "subs": {"wholesale_general":{"en":"General wholesale","sw":"Jumla ya bidhaa"}, "wholesale_cereals":{"en":"Cereals wholesale","sw":"Jumla ya nafaka"}, "wholesale_clothing":{"en":"Clothing wholesale","sw":"Jumla ya nguo"}, "wholesale_hardware":{"en":"Hardware wholesale","sw":"Jumla ya vifaa"}, "wholesale_other":{"en":"Other wholesale","sw":"Jumla nyingine"}}},
-    "Manufacturing":      {"en": "Manufacturing",           "sw": "Utengenezaji",                "subs": {"food_bakery":{"en":"Food / bakery","sw":"Chakula na mikate"}, "tailoring_clothing":{"en":"Tailoring & clothing","sw":"Ushonaji"}, "furniture_carpentry":{"en":"Furniture & carpentry","sw":"Fanicha na useremala"}, "metal_fabrication":{"en":"Metal fabrication","sw":"Useremala wa chuma"}, "manuf_other":{"en":"Other manufacturing","sw":"Utengenezaji mwingine"}}},
-    "Transport":          {"en": "Transport",               "sw": "Usafirishaji",                "subs": {"taxi_rideshare":{"en":"Taxi / ride services","sw":"Teksi na usafiri"}, "goods_transport":{"en":"Goods transport","sw":"Usafirishaji wa bidhaa"}, "motorbike":{"en":"Motorbike services","sw":"Pikipiki"}, "petrol_station":{"en":"Petrol station","sw":"Kituo cha mafuta"}, "transport_other":{"en":"Other transport","sw":"Usafirishaji mwingine"}}},
-    "Construction":       {"en": "Construction",            "sw": "Ujenzi",                     "subs": {"hardware_materials":{"en":"Hardware / materials","sw":"Vifaa vya ujenzi"}, "carpentry":{"en":"Carpentry","sw":"Useremala"}, "rental_construction":{"en":"Rental property","sw":"Kupangisha nyumba"}, "construction_services":{"en":"Construction services","sw":"Huduma za ujenzi"}, "construction_other":{"en":"Other construction","sw":"Ujenzi mwingine"}}},
-    "Banking_RealEstate": {"en": "Banking & Real Estate",   "sw": "Benki na Mali Isiyohamishika","subs": {"banking_agent":{"en":"Banking agent","sw":"Wakala wa benki"}, "real_estate":{"en":"Real estate","sw":"Mali isiyohamishika"}, "banking_other":{"en":"Other","sw":"Nyingine"}}},
+    "Retail":             {"en": "Retail",                  "sw": "Biashara ya Rejareja",        "subs": {
+        "grocery_food":       {"en": "Food & Grocery",           "sw": "Vyakula"},
+        "clothing_fashion":   {"en": "Clothing & Fashion",       "sw": "Nguo"},
+        "electronics":        {"en": "Electronics & Phones",     "sw": "Simu na vifaa vya Elektroniki"},
+        "cereals":            {"en": "Cereals",                  "sw": "Nafaka na Mazao"},
+        "farm_inputs":        {"en": "Farm Inputs",              "sw": "Vifaa vya kilimo"},
+        "auto_spares":        {"en": "Auto & Motorbikes",        "sw": "Vipuri vya Gari"},
+    }},
+    "Services":           {"en": "Services",                "sw": "Huduma",                      "subs": {
+        "salon_beauty":       {"en": "Salon & Beauty",           "sw": "Saluni na Urembo"},
+        "hotel_restaurant":   {"en": "Hotel / Restaurant",       "sw": "Hoteli"},
+        "cyber_ict":          {"en": "Cyber / IT",               "sw": "Cyber na I.T"},
+        "barbershop":         {"en": "Barbershop",               "sw": "Kinyozi"},
+        "rental_property":    {"en": "Rental Property",          "sw": "Nyumba za kukodisha"},
+        "taxi_transport":     {"en": "Taxi & Transport",         "sw": "Teksi na uchukuzi"},
+        "school_education":   {"en": "School / Education",       "sw": "Shule"},
+        "medical_health":     {"en": "Health & Medical",         "sw": "Afya na Matibabu"},
+        "mpesa_agency":       {"en": "Mpesa & Financial Services","sw": "Mpesa na Huduma za Pesa"},
+        "services_other":     {"en": "Other Services",           "sw": "Huduma zinginezo"},
+    }},
+    "Agriculture":        {"en": "Agriculture",             "sw": "Kilimo",                      "subs": {
+        "crop_farming":       {"en": "Crop Farming",             "sw": "Kilimo cha mimea"},
+        "livestock_poultry":  {"en": "Livestock & Poultry",      "sw": "Mifugo na Kuku"},
+        "dairy":              {"en": "Dairy",                    "sw": "Uzalishaji wa Maziwa"},
+        "fish":               {"en": "Fish",                     "sw": "Samaki"},
+        "farm_inputs_agro":   {"en": "Farm Inputs",              "sw": "Vifaa vya kilimo"},
+        "agri_other":         {"en": "Other Agriculture",        "sw": "Aina zingine za kilimo"},
+    }},
+    "Wholesale":          {"en": "Wholesale",               "sw": "Biashara ya Jumla",           "subs": {
+        "wholesale_general":  {"en": "General Wholesale",        "sw": "Bidhaa za Jumla"},
+        "wholesale_cereals":  {"en": "Cereals",                  "sw": "Nafaka"},
+        "wholesale_clothing": {"en": "Clothing",                 "sw": "Nguo"},
+        "wholesale_hardware": {"en": "Hardware",                 "sw": "Vifaa vya Ujenzi"},
+        "wholesale_other":    {"en": "Other",                    "sw": "Bidhaa zinginezo"},
+    }},
+    "Manufacturing":      {"en": "Manufacturing",           "sw": "Uundaji na Utengenezaji",     "subs": {
+        "food_bakery":        {"en": "Food / Bakery",            "sw": "Vyakula / Mikate"},
+        "tailoring_clothing": {"en": "Tailoring & Clothing",     "sw": "Ushonaji Nguo"},
+        "furniture_carpentry":{"en": "Furniture & Carpentry",    "sw": "Fanicha na Useremala"},
+        "metal_fabrication":  {"en": "Metal Fabrication",        "sw": "Uundaji kwa kutumia chuma"},
+        "manuf_other":        {"en": "Other Manufacturing",      "sw": "Utengenezaji Mwingine"},
+    }},
+    "Transport":          {"en": "Transport",               "sw": "Uchukuzi na Ushafirishaji",   "subs": {
+        "taxi_rideshare":     {"en": "Taxi",                     "sw": "Teksi"},
+        "goods_transport":    {"en": "Goods Transport",          "sw": "Uchukuzi wa bidhaa"},
+        "motorbike":          {"en": "Motorbike / Boda Boda",    "sw": "Pikipiki / Boda Boda"},
+        "petrol_station":     {"en": "Petrol Station",           "sw": "Kituo cha mafuta"},
+        "transport_other":    {"en": "Other Transport",          "sw": "Uchukuzi na ushafirishaji mwingine"},
+    }},
+    "Construction":       {"en": "Construction",            "sw": "Ujenzi",                      "subs": {
+        "hardware_materials": {"en": "Hardware / Materials",     "sw": "Vifaa vya ujenzi"},
+        "carpentry":          {"en": "Carpentry",                "sw": "Useremala"},
+        "rental_construction":{"en": "Rental Property",          "sw": "Ujenzi wa Nyumba za kukodisha"},
+        "construction_services":{"en":"Construction Services",   "sw": "Huduma za Ujenzi"},
+        "construction_other": {"en": "Other Construction",       "sw": "Ujenzi mwingine"},
+    }},
+    "Banking_RealEstate": {"en": "Banking & Real Estate",   "sw": "Biashara ya Benki, Nyumba na Mashamba", "subs": {
+        "banking_agent":      {"en": "Banking Agent",            "sw": "Ajenti wa Benki"},
+        "real_estate":        {"en": "Real Estate",              "sw": "Nyumba na Mashamba"},
+        "banking_other":      {"en": "Other",                    "sw": "Zinginezo"},
+    }},
 }
 
 REGIONS = {
-    "Rift-Valley":        {"en":"Rift Valley",       "sw":"Bonde la Ufa"},
-    "Nairobi East":       {"en":"Nairobi East",      "sw":"Nairobi Mashariki"},
-    "Nairobi West":       {"en":"Nairobi West",      "sw":"Nairobi Magharibi"},
-    "North Eastern":      {"en":"North Eastern",     "sw":"Kaskazini Mashariki"},
+    "Nairobi":            {"en":"Nairobi",           "sw":"Nairobi"},
     "Central":            {"en":"Central",           "sw":"Kati"},
-    "Nyanza and Western": {"en":"Nyanza & Western",  "sw":"Nyanza na Magharibi"},
+    "Rift-Valley":        {"en":"Rift Valley",       "sw":"Bonde la Ufa"},
     "Coast":              {"en":"Coast",             "sw":"Pwani"},
+    "Nyanza":             {"en":"Nyanza",            "sw":"Nyanza"},
+    "Western":            {"en":"Western",           "sw":"Magharibi"},
+    "North Eastern":      {"en":"North Eastern",     "sw":"Kaskazini Mashariki"},
+}
+
+# Maps display region key → encoder key used during model training
+REGION_ENCODE = {
+    "Nairobi":      "Nairobi East",       # pooled; East used as proxy
+    "Nyanza":       "Nyanza and Western", # displayed separately but same model key
+    "Western":      "Nyanza and Western",
 }
 
 SALES_BANDS   = {"KES 0 – 100,000":50000,"KES 100,001 – 200,000":150000,"KES 200,001 – 300,000":250000,"KES 300,001 – 400,000":350000,"KES 400,001 – 500,000":450000,"KES 500,001 – 600,000":550000,"KES 600,001 – 700,000":650000,"KES 700,001 – 800,000":750000,"KES 800,001 – 900,000":850000,"KES 900,001 – 1,000,000":950000,"Above KES 1,000,000":1500000}
@@ -273,9 +333,10 @@ def t(key):   return T[st.session_state.lang][key]
 
 # ── Prediction ────────────────────────────────────────────────────────────────
 def predict():
+    region_key = REGION_ENCODE.get(st.session_state.region, st.session_state.region)
     raw = pd.DataFrame([{
         "subcategory":     st.session_state.subcategory,
-        "region":          st.session_state.region,
+        "region":          region_key,
         "sales":           SALES_BANDS[st.session_state.sales],
         "profits":         PROFIT_BANDS[st.session_state.profits],
         "startup_capital": CAPITAL_BANDS[st.session_state.startup],
@@ -310,11 +371,14 @@ step = st.session_state.step
 # STEP 0 — Welcome
 # ══════════════════════════════════════════════════════════════════════════════
 if step == 0:
-    # Image — replace assets/hero.png with your chosen Undraw illustration
-    # Recommended: https://undraw.co/illustrations → search "business shop" or
-    # "finance" → download SVG → save as assets/hero.svg, update path below
-    st.markdown('<div style="font-size:5rem; text-align:center">🌱</div>',
-                unsafe_allow_html=True)
+    logo_path = "assets/ChatGPT Image Mar 29, 2026 at 07_28_15 PM.png"
+    if os.path.exists(logo_path):
+        col_l, col_c, col_r = st.columns([1, 2, 1])
+        with col_c:
+            st.image(logo_path, use_container_width=True)
+    else:
+        st.markdown('<div style="font-size:5rem; text-align:center">🌱</div>',
+                    unsafe_allow_html=True)
 
     st.markdown(f'<p class="brand-title">Thamini</p>', unsafe_allow_html=True)
     st.markdown(
@@ -484,27 +548,41 @@ elif step == 7:
 # ══════════════════════════════════════════════════════════════════════════════
 elif step == 8:
     low, mid, high = predict()
+    L = st.session_state.lang
+    typical_label = "Typical loan amount" if L == "en" else "Mkopo wa kawaida"
+    range_label   = "Likely range" if L == "en" else "Kiwango kinachowezekana"
 
     st.markdown(f'<p class="question" style="text-align:center">✅ {t("result_title")}</p>',
                 unsafe_allow_html=True)
-    st.markdown(f'<p style="text-align:center; color:#FDE68A; margin-bottom:1rem">{t("result_intro")}</p>',
+    st.markdown(f'<p style="text-align:center; color:#FDE68A; margin-bottom:1.5rem">{t("result_intro")}</p>',
                 unsafe_allow_html=True)
 
-    # Visual range bar
+    # ── Typical amount (prominent, on top) ──
+    st.markdown(f"""
+    <div style="text-align:center; margin-bottom:1.75rem">
+      <div style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+                  color:#FDE68A; margin-bottom:0.3rem">{typical_label}</div>
+      <div style="font-size:3rem; font-weight:800; color:#F0B429; line-height:1.1">KES {mid:,}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # ── Range bar (below) ──
     display_max = 2_000_000
     low_pct  = min(low  / display_max * 100, 96)
     mid_pct  = min(mid  / display_max * 100, 96)
     high_pct = min(high / display_max * 100, 96)
     fill_width = high_pct - low_pct
-    typical_label = "typical" if st.session_state.lang == "en" else "ya kawaida"
 
     st.markdown(f"""
-    <div style="margin: 1rem 0 2.5rem 0">
-      <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem">
+    <div style="margin: 0 0 2rem 0">
+      <div style="font-size:0.78rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+                  color:#FDE68A; margin-bottom:0.5rem">{range_label}</div>
+      <div style="display:flex; justify-content:space-between; margin-bottom:0.4rem">
         <span style="font-size:0.82rem; color:#FDE68A">KES {low:,}</span>
         <span style="font-size:0.82rem; color:#FDE68A">KES {high:,}</span>
       </div>
-      <div style="position:relative; height:16px; background:#3D7A52; border-radius:99px; margin-bottom:0.75rem; box-shadow: inset 0 1px 3px rgba(0,0,0,0.4)">
+      <div style="position:relative; height:16px; background:#3D7A52; border-radius:99px;
+                  box-shadow: inset 0 1px 3px rgba(0,0,0,0.4)">
         <div style="position:absolute; left:{low_pct:.1f}%; width:{fill_width:.1f}%;
                     height:100%; background:#F0B429; border-radius:99px;">
         </div>
@@ -513,24 +591,8 @@ elif step == 8:
                     box-shadow:0 0 14px rgba(240,180,41,1), 0 2px 6px rgba(0,0,0,0.4)">
         </div>
       </div>
-      <div style="position:relative; height:2.5rem">
-        <div style="position:absolute; left:calc({mid_pct:.1f}% - 65px); width:130px; text-align:center">
-          <div style="font-size:1.4rem; font-weight:800; color:#F0B429; line-height:1.1">KES {mid:,}</div>
-          <div style="font-size:0.75rem; color:#FDE68A">{typical_label}</div>
-        </div>
-      </div>
     </div>
     """, unsafe_allow_html=True)
-
-    # Summary of inputs
-    L = st.session_state.lang
-    with st.expander("📋 " + ("Your answers" if L == "en" else "Majibu yako")):
-        st.write(f"**{'Business' if L=='en' else 'Biashara'}:** {TAXONOMY[st.session_state.category]['subs'][st.session_state.subcategory][L]}")
-        st.write(f"**{'Region' if L=='en' else 'Eneo'}:** {REGIONS[st.session_state.region][L]}")
-        st.write(f"**{'Sales' if L=='en' else 'Mauzo'}:** {st.session_state.sales}")
-        st.write(f"**{'Profits' if L=='en' else 'Faida'}:** {st.session_state.profits}")
-        st.write(f"**{'Startup capital' if L=='en' else 'Mtaji wa kuanzisha'}:** {st.session_state.startup}")
-        st.write(f"**{'Working capital' if L=='en' else 'Mtaji wa kufanyia kazi'}:** {st.session_state.working}")
 
     st.markdown(f'<p class="result-note">{t("result_note")}</p>', unsafe_allow_html=True)
 
