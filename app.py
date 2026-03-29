@@ -371,7 +371,7 @@ step = st.session_state.step
 # STEP 0 — Welcome
 # ══════════════════════════════════════════════════════════════════════════════
 if step == 0:
-    logo_path = "assets/ChatGPT Image Mar 29, 2026 at 07_28_15 PM.png"
+    logo_path = "assets/ChatGPT Image Mar 29, 2026 at 07_58_06 PM.png"
     if os.path.exists(logo_path):
         col_l, col_c, col_r = st.columns([1, 2, 1])
         with col_c:
